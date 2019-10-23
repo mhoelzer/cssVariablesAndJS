@@ -1,0 +1,34 @@
+/* css variables get declared on highest level/root */
+:root {
+	--base: #ffc6000; /* yellow color */
+	--spacing: 10px;
+	--blur: 10px;
+}
+
+body {
+	text-align: center;
+	background: #193549;
+	color: white;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.hl {
+	color: var(--base);
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100px;
+}
+
+img{ 
+	/* sas has a $, but in css it's a -- */
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
